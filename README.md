@@ -2,6 +2,12 @@
 
 This repository contains a Python script (`prompt_engin.py`) that orchestrates a multi-step prompt engineering pipeline using the Google Gemini API. Its purpose is to take a user input and generate a comprehensive, structured prompt by breaking down the request into several key components: role, task, specification, context, and examples.
 
+## Source
+
+This project was inspired by the following video walkthrough:
+
+[![Prompt Engineering Pipeline Demo](https://img.youtube.com/vi/jEkSdruxmyo/0.jpg)](https://www.youtube.com/watch?v=jEkSdruxmyo)
+
 ## How It Works
 
 The `prompt_engin.py` script automates the process of crafting detailed prompts for large language models (LLMs) by chaining together several specialized "engines," each responsible for a specific aspect of the prompt.
@@ -77,3 +83,6 @@ python prompt_engin.py
 ```
 
 The script will read input from `input.txt` and `specification.txt`, call the Gemini API in sequence for each prompt engineering step, and finally generate a markdown summary file in the current directory.
+
+
+*Source: https://www.youtube.com/watch?v=jEkSdruxmyo*
