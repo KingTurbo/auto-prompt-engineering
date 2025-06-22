@@ -38,7 +38,7 @@ def call_gemini_api(
     system_instruction_text = _load_system_instruction(system_instruction_path)
 
     generate_content_config = types.GenerateContentConfig(
-        thinking_config=types.ThinkingConfig(),,
+        thinking_config=types.ThinkingConfig(),
         response_mime_type="application/json",
         response_schema=response_schema,
         system_instruction=[types.Part.from_text(text=system_instruction_text)],
